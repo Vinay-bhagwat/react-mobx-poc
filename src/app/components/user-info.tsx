@@ -15,6 +15,7 @@ interface IUserInfoAppState{
             }
             {this.renderList()}
            <input onChange={this.addUserInfo} ></input>
+           <button onClick={this.props.store.clearUserInfo}>Clear User info</button>
         </div>
 
     }

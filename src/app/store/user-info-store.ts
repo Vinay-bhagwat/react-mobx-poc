@@ -34,6 +34,11 @@ constructor(userData:IUserInfo){
 setUserInfo(userData:IUserInfo){
         this.userInfo=userData
     }
+
+    @action.bound
+clearUserInfo(userData:IUserInfo){
+        this.userInfo=defaultUserInfoState
+    }
 }
 
 export const userInfoStore=new UserinfoStore(defaultUserInfoState)
